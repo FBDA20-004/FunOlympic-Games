@@ -9,6 +9,8 @@ df = pd.read_csv("FunOlympic.csv")
 # Create the Dash app
 app = Dash(__name__)
 
+server=app.server
+
 # Define the layout of the app
 app.layout = html.Div(className='dash-container', children=[
     html.H1("FunOlympics Games Dashboard", className='header'),
